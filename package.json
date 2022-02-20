@@ -30,7 +30,7 @@
         "tape": "^4.5.1",
         "webpack": "^3.6.0",
         "webpack-dev-server": "^2.4.2",
-        "canvas": "^1.6.5"
+        "canvas": "^2.9.0"
     },
     "files": [
         "lib",
