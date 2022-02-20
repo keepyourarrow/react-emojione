@@ -6,7 +6,6 @@ const Emoji = ({codepoint, style = {}, onClick}) => (
     <span
         onClick={onClick}
         style={sprite(codepoint, style)}
-        title={codepointToShort.get(codepoint)}
     >
         {codepointToUnicode.get(codepoint)}
     </span>
