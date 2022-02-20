@@ -33,9 +33,7 @@
         "canvas": "^2.9.0"
     },
     "files": [
-        "lib",
-        "assets",
-        "scripts"
+        "src"
     ],
     "scripts": {
         "start": "webpack-dev-server --inline --content-base demo/ --config ./webpack.config.js",
