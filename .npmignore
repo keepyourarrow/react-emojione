@@ -8,3 +8,4 @@ yarn.lock
 test
 .yarnclean
 yarn-error.log
+README.md

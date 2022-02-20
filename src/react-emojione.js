@@ -114,4 +114,26 @@ export const emojify = (str, options = {}) => {
     return mergedOptions.output === 'unicode' ? convertedParts.join('') : convertedParts;
 };
 
+class Emojify extends React.Component {
+
+    traverse(children, options) {
+        return React.Children.map(children, child => {
+            if (React.isValidElement(child)) {
+                return React.cloneElement(child, {}, this.traverse(child.props.children, options));
+            }
+            if (typeof child === 'string') {
+                return emojify(child, options);
+            }
+            return child;
+        });
+    }
+
+    render() {
+        const children = this.props.children;
+        return React.Children.count(children)
+            ? this.traverse(children, this.props)
+            : null;
+    }
+}
+
 export default Emojify;
