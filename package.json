@@ -33,7 +33,10 @@
         "canvas": "^2.9.0"
     },
     "files": [
-        "src"
+        "src",
+        ".babelrc",
+        "webpack.config.js",
+        "",
     ],
     "scripts": {
         "start": "webpack-dev-server --inline --content-base demo/ --config ./webpack.config.js",
