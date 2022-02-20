@@ -33,9 +33,7 @@
         "canvas": "^1.6.5"
     },
     "files": [
-        "lib",
-        "assets",
-        "scripts"
+        "src"
     ],
     "scripts": {
         "create-emoji-data": "./scripts/create-emoji-data.js > src/data/emoji-data.js",
