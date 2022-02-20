@@ -32,6 +32,9 @@
         "webpack-dev-server": "^2.4.2",
         "canvas": "^2.9.0"
     },
+    files": [
+        "src"
+    ],
     "scripts": {
         "start": "webpack-dev-server --inline --content-base demo/ --config ./webpack.config.js",
         "clean": "rimraf lib",
