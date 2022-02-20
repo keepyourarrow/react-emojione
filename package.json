@@ -35,8 +35,7 @@
     "files": [
         "src",
         ".babelrc",
-        "webpack.config.js",
-        "",
+        "webpack.config.js"
     ],
     "scripts": {
         "start": "webpack-dev-server --inline --content-base demo/ --config ./webpack.config.js",
